@@ -26,8 +26,8 @@ We want to be able to talk in the simplest way. That's why we created Virtuell.
 **Accountless**  
 You don't need to create any account to use Virtuell. Just use it!
 
-**No need for program**  
-You don't need to install anything to your device. Simply use it in your browser, in any device.
+**No need installation**  
+You don't need to install anything. Simply use it in your browser, in any device.
 
 **No money charge**  
 Free, forever.
