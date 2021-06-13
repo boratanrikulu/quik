@@ -51,6 +51,17 @@ Virtuell works on Pion ecosystem. Used technologies are below;
 - Fiber
 - FastHTTP Websocket
 
+## TODOs
+
+- [ ] Automatically changing bitrate according to user's internet speed.  
+- [ ] Screen sharing.  
+- [ ] UI improvements.  
+- [ ] Calendar option for scheduled meetings.  
+- [ ] Admin area for self-hosted managements.  
+- [ ] Structure for scalability.  
+- [ ] GCP and Heroku installation buttons.  
+- [ ] Well written readme for installation stages.  
+
 ## Development
 
 Build images;  
