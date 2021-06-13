@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  server:
+    image: v 
+    deploy:
+      replicas: 1
+    restart: always
+    logging:
+      driver: "json-file"
+      options:
+        max-size: "200m"
+        max-file: "10"
+    ports:
+      - 8080:8080
+    command: --addr :8080

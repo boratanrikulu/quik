@@ -1,0 +1,33 @@
+version: '3.8'
+
+services:
+  server:
+    image: v   
+    deploy:
+      replicas: 1
+    restart: always
+    logging:
+      driver: "json-file"
+      options:
+        max-size: "200m"
+        max-file: "10"
+    environment:
+      - ENVIRONMENT=PRODUCTION
+    ports:
+      - 443:443
+    volumes:
+      - /etc/letsencrypt/live/v.bora.sh/fullchain.pem:/src/fullchain.pem:ro
+      - /etc/letsencrypt/live/v.bora.sh/privkey.pem:/src/privkey.pem:ro
+    command: --addr :443 --cert fullchain.pem --key privkey.pem
+  turn:
+    image: turn
+    deploy:
+      replicas: 1
+    restart: always
+    logging:
+      driver: "json-file"
+      options:
+        max-size: "200m"
+        max-file: "10"
+    network_mode: host
+    command: -realm v.bora.sh -public-ip 159.65.125.4 -users virtuell=virtuell
