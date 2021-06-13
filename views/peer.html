@@ -1,0 +1,49 @@
+{{ template "partials/chat" . }}
+
+<div class="viewer">
+	<p class="icon-users" id="viewer-count"></p>
+</div>
+
+<div id="noperm" class="columns">
+	<div class="column notif">
+		<article class="notification is-link">
+			Camera and microphone permissions are needed to join the room. <br>
+			Otherwise, you can join the <a href="{{ .StreamLink }}"><strong>stream</strong></a> as viewer.
+		</article>
+	</div>
+</div>
+
+<div id="peers">
+	<div class="columns is-multiline" id="videos">
+		<div class="column is-6 peer">
+			<video id="localVideo" class="video-area" autoplay muted></video>
+		</div>
+		<div id="noone" class="column is-6 notif">
+			<article id="noonein" class="notification is-primary is-light">
+				<button class="delete"></button>
+				No other streamer is in the room. <br>
+				Share your room link to invite your friends.
+			</article>
+			<article class="notification is-primary is-light">
+				<button class="delete"></button>
+				Share your stream link with your viewers.
+			</article>
+		</div>
+		<div id="nocon" class="column is-6 notif">
+			<article class="notification is-danger">
+				Connection is closed!<br>
+				Please refresh the page.
+			</article>
+		</div>
+	</div>
+</div>
+
+<script>
+	let RoomWebsocketAddr = "{{.RoomWebsocketAddr}}"
+	let ChatWebsocketAddr = "{{.ChatWebsocketAddr}}"
+	let ViewerWebsocketAddr = "{{.ViewerWebsocketAddr}}"
+</script>
+<script src="/javascript/peer.js"></script>
+<script src="/javascript/chat.js"></script>
+<script src="/javascript/viewer.js"></script>
+<script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>

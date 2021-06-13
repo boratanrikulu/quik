@@ -17,7 +17,7 @@ DO NOT USE IT YET.
 
 ## What
 
-Virtuell is a video conferencing tool.
+Virtuell is a video conference tool.
 
 ## Why
 

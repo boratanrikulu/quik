@@ -1,0 +1,45 @@
+{{ if .NoStream }}
+
+<div id="nostream" class="columns">
+	<div class="column notif">
+		<article class="notification is-danger is-link">
+			There is no stream for the given Stream Link. <br>
+			Please join another stream room.
+		</article>
+	</div>
+</div>
+{{ else }}
+
+{{ template "partials/chat" . }}
+
+<div class="viewer">
+	<p class="icon-users" id="viewer-count"></p>
+</div>
+
+<div id="peers">
+	<div class="columns is-multiline" id="videos">
+		<div id="noonestream" class="column notif">
+			<article class="notification is-primary is-light">
+				Hey! <br>
+				No streamer in the room. <br>
+				Please wait for the streamer.
+			</article>
+		</div>
+		<div id="nocon" class="column notif">
+			<article class="notification is-danger">
+				Connection is closed! <br>
+				Please refresh the page.
+			</article>
+		</div>
+	</div>
+</div>
+
+<script>
+	let StreamWebsocketAddr = "{{.StreamWebsocketAddr}}"
+	let ChatWebsocketAddr = "{{.ChatWebsocketAddr}}"
+	let ViewerWebsocketAddr = "{{.ViewerWebsocketAddr}}"
+</script>
+<script src="/javascript/stream.js"></script>
+<script src="/javascript/chat.js"></script>
+<script src="/javascript/viewer.js"></script>
+{{ end }}

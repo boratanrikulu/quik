@@ -1,0 +1,46 @@
+<body>
+    <section class="section">
+        <div class="container">
+            <header>
+                <nav class="navbar" role="navigation" aria-label="main navigation">
+                    <div class="navbar-brand">
+                        <a class="navbar-item title" href="/"><strong>Virtuell</strong></a>
+                    </div>
+                    <div class="navbar-item">
+                        <p class="subtitle">
+                            talk, easily.
+                        </p>
+                    </div>
+                    {{ if .Type }}
+                    <div class="navbar-end">
+                        {{ if eq .Type "room" }}
+                        <div class="navbar-item has-dropdown is-hoverable">
+                            <div class="navbar-link">
+                                Share
+                                </a>
+                                <div class="navbar-dropdown">
+                                    <div class="navbar-item">
+                                        <button class="button is-light is-fullwidth"
+                                            onclick="copyToClipboard('{{ .RoomLink }}')">Room Link</button>
+                                    </div>
+                                    <div class="navbar-item">
+                                        <button class="button is-light is-fullwidth"
+                                            onclick="copyToClipboard('{{ .StreamLink }}')">Stream Link</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="navbar-item">
+                            <a href="/" class="button is-danger">Leave Room</a>
+                        </div>
+                        {{ end }}
+                        {{ if eq .Type "stream" }}
+                        <div class="navbar-item">
+                            <a href="/" class="button is-danger">Leave Stream</a>
+                        </div>
+                        {{ end }}
+                    </div>
+                    {{ end }}
+                </nav>
+            </header>
+            <hr>

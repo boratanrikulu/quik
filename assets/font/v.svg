@@ -1,0 +1,14 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns="http://www.w3.org/2000/svg">
+<metadata>Copyright (C) 2021 by original authors @ fontello.com</metadata>
+<defs>
+<font id="v" horiz-adv-x="1000" >
+<font-face font-family="v" font-weight="400" font-stretch="normal" units-per-em="1000" ascent="850" descent="-150" />
+<missing-glyph horiz-adv-x="1000" />
+<glyph glyph-name="user" unicode="&#xe800;" d="M714 69q0-60-35-104t-84-44h-476q-49 0-84 44t-35 104q0 48 5 90t17 85 33 73 52 50 76 19q73-72 174-72t175 72q42 0 75-19t52-50 33-73 18-85 4-90z m-143 495q0-88-62-151t-152-63-151 63-63 151 63 152 151 63 152-63 62-152z" horiz-adv-x="714.3" />
+
+<glyph glyph-name="users" unicode="&#xe801;" d="M331 350q-90-3-148-71h-75q-45 0-77 22t-31 66q0 197 69 197 4 0 25-11t54-24 66-12q38 0 75 13-3-21-3-37 0-78 45-143z m598-356q0-66-41-105t-108-39h-488q-68 0-108 39t-41 105q0 30 2 58t8 61 14 61 24 54 35 45 48 30 62 11q6 0 24-12t41-26 59-27 76-12 75 12 60 27 41 26 24 12q34 0 62-11t47-30 35-45 24-54 15-61 8-61 2-58z m-572 713q0-59-42-101t-101-42-101 42-42 101 42 101 101 42 101-42 42-101z m393-214q0-89-63-152t-151-62-152 62-63 152 63 151 152 63 151-63 63-151z m321-126q0-43-31-66t-77-22h-75q-57 68-147 71 45 65 45 143 0 16-3 37 37-13 74-13 33 0 67 12t54 24 24 11q69 0 69-197z m-71 340q0-59-42-101t-101-42-101 42-42 101 42 101 101 42 101-42 42-101z" horiz-adv-x="1071.4" />
+</font>
+</defs>
+</svg>
