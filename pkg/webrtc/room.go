@@ -3,7 +3,6 @@ package webrtc
 import (
 	"encoding/json"
 	"log"
-	"os"
 	"sync"
 
 	"github.com/gofiber/websocket/v2"
@@ -11,24 +10,7 @@ import (
 )
 
 func RoomConn(c *websocket.Conn, p *Peers) {
-	var conf webrtc.Configuration
-	if os.Getenv("ENVIRONMENT") == "PRODUCTION" {
-		conf = webrtc.Configuration{
-			ICETransportPolicy: webrtc.ICETransportPolicyRelay,
-			ICEServers: []webrtc.ICEServer{
-				{
-					URLs: []string{"stun:159.65.125.4:3478"},
-				},
-				{
-					URLs:           []string{"turn:159.65.125.4:3478"},
-					Username:       "virtuell",
-					Credential:     "virtuell",
-					CredentialType: webrtc.ICECredentialTypePassword,
-				},
-			},
-		}
-	}
-	peerConnection, err := webrtc.NewPeerConnection(conf)
+	peerConnection, err := webrtc.NewPeerConnection(config)
 	if err != nil {
 		log.Print(err)
 		return

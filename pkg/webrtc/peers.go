@@ -19,6 +19,23 @@ var (
 	Streams   map[string]*Room
 )
 
+var (
+	config = webrtc.Configuration{
+		ICETransportPolicy: webrtc.ICETransportPolicyRelay,
+		ICEServers: []webrtc.ICEServer{
+			{
+				URLs: []string{"stun:159.65.125.4:3478"},
+			},
+			{
+				URLs:           []string{"turn:159.65.125.4:3478"},
+				Username:       "virtuell",
+				Credential:     "virtuell",
+				CredentialType: webrtc.ICECredentialTypePassword,
+			},
+		},
+	}
+)
+
 type Room struct {
 	Peers *Peers
 	Hub   *chat.Hub
