@@ -47,3 +47,20 @@ Virtuell works on Pion ecosystem. Used technologies are below;
 - Pion/Turn
 - Fiber
 - FastHTTP Websocket
+
+## Development
+
+Build images;  
+```sh
+make build-dev
+```
+
+For development;  
+```sh
+make run-dev
+```
+
+For production;  
+```sh
+make run-prod
+```
