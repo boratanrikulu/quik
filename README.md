@@ -12,8 +12,8 @@
 
 **Note:**  
 This project is heavily under development.  
-IT IS NOT PRODUCTION READY.  
-DO NOT USE IT YET.
+IT IS NOT PRODUCTION READY YET.  
+DO NOT USE IT.
 
 ## What
 
