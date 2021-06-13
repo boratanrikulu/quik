@@ -17,7 +17,7 @@ DO NOT USE IT.
 
 ## What
 
-Virtuell is a video conference tool.
+Virtuell is a video conferencing tool.
 
 ## Why
 
@@ -33,7 +33,7 @@ You don't need to install anything. Simply use it in your browser, in any device
 Free, forever.
 
 **Share as stream**  
-You will be able share your video meeting as stream to the world.
+You will be able share your video meeting to the world as stream.
 
 ## Preview
 
