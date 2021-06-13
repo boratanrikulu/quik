@@ -11,7 +11,7 @@
 <hr>
 
 **Note:**  
-This project is havily under development.  
+This project is heavily under development.  
 IT IS NOT PRODUCTION READY.  
 DO NOT USE IT YET.
 
