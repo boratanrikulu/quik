@@ -1,9 +1,9 @@
-# Virtuell
+# Quik.do
 
 <div align="center">
 	<img height="300px" src="doc/banner.png">
 	<p>
-		<strong><code>Virtuell - v0.1.0</code></strong> <br>
+		<strong><code>Quik.do - v0.1.0</code></strong> <br>
 		talk, easily. <br>
 	</p>
 </div>
@@ -17,14 +17,14 @@ DO NOT USE IT.
 
 ## What
 
-Virtuell is a video conferencing tool.
+Quik.do is a video conferencing tool.
 
 ## Why
 
 We want to be able to talk in the simplest way. That's why we created Virtuell.
 
 **Accountless**  
-You don't need to create any account to use Virtuell. Just use it!
+You don't need to create any account to use Quik.do, Just use it!
 
 **No installation**  
 You don't need to install anything. Simply use it in your browser, in any device.
@@ -44,7 +44,7 @@ If you wish, you can run this application as self-hosted for your own domain.
 
 ## Behind
 
-Virtuell works on Pion ecosystem. Used technologies are below;
+Quik.do works on Pion ecosystem. Used technologies are below;
 
 - Pion/WebRTC
 - Pion/Turn
