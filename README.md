@@ -1,7 +1,7 @@
 # Quik.do
 
 <div align="center">
-	<img height="300px" src="doc/banner.png">
+	<img height="300px" src="doc/quik.do.png">
 	<p>
 		<strong><code>Quik.do - v0.1.0</code></strong> <br>
 		talk, easily. <br>
