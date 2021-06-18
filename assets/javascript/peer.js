@@ -48,12 +48,12 @@ function connect(stream) {
 	document.getElementById('noperm').style.display = 'none'
 	let pc = new RTCPeerConnection({
 		iceServers: [{
-				'urls': 'stun:159.65.125.4:3478',
+				'urls': 'stun:turn.quik.do:3478',
 			},
 			{
-				'urls': 'turn:159.65.125.4:3478',
-				'username': 'virtuell',
-				'credential': 'virtuell',
+				'urls': 'turn:turn.quik.do:3478',
+				'username': 'quik',
+				'credential': 'quikdo',
 			}
 		]
 	})

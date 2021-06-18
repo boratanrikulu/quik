@@ -30,4 +30,4 @@ services:
         max-size: "200m"
         max-file: "10"
     network_mode: host
-    command: -realm v.bora.sh -public-ip 159.65.125.4 -users virtuell=virtuell
+    command: -realm turn.quik.do -public-ip 46.101.196.239 -users quik=quikdo
