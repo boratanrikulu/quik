@@ -3,7 +3,7 @@
 <div align="center">
 	<img height="300px" src="doc/quik.do.png">
 	<p>
-		<strong><code>Quik.do - v0.1.0</code></strong> <br>
+		<strong><code>v0.1.0</code></strong> <br>
 		talk, easily. <br>
 	</p>
 </div>
@@ -21,7 +21,7 @@ Quik.do is a video conferencing tool.
 
 ## Why
 
-We want to be able to talk in the simplest way. That's why we created Virtuell.
+We want to be able to talk in the simplest way. That's why we created **Quik.do**.
 
 **Accountless**  
 You don't need to create any account to use Quik.do, Just use it!
