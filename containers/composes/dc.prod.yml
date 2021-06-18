@@ -16,8 +16,8 @@ services:
     ports:
       - 443:443
     volumes:
-      - /etc/letsencrypt/live/v.bora.sh/fullchain.pem:/src/fullchain.pem:ro
-      - /etc/letsencrypt/live/v.bora.sh/privkey.pem:/src/privkey.pem:ro
+      - /etc/letsencrypt/live/quik.do/fullchain.pem:/src/fullchain.pem:ro
+      - /etc/letsencrypt/live/quik.do/privkey.pem:/src/privkey.pem:ro
     command: --addr :443 --cert fullchain.pem --key privkey.pem
   turn:
     image: turn
