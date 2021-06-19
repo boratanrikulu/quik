@@ -3,6 +3,7 @@ package webrtc
 import (
 	"encoding/json"
 	"log"
+	"os"
 	"sync"
 
 	"github.com/gofiber/websocket/v2"
@@ -10,6 +11,10 @@ import (
 )
 
 func StreamConn(c *websocket.Conn, p *Peers) {
+	var config webrtc.Configuration
+	if os.Getenv("ENVIRONMENT") == "PRODUCTION" {
+		config = turnConfig
+	}
 	peerConnection, err := webrtc.NewPeerConnection(config)
 	if err != nil {
 		log.Print(err)

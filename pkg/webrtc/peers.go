@@ -20,7 +20,7 @@ var (
 )
 
 var (
-	config = webrtc.Configuration{
+	turnConfig = webrtc.Configuration{
 		ICETransportPolicy: webrtc.ICETransportPolicyRelay,
 		ICEServers: []webrtc.ICEServer{
 			{
