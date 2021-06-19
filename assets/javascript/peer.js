@@ -162,8 +162,21 @@ function connect(stream) {
 }
 
 navigator.mediaDevices.getUserMedia({
-		video: true,
-		audio: true
+		video: {
+			width: {
+				max: 1280
+			},
+			height: {
+				max: 720
+			},
+			aspectRatio: 4 / 3,
+			frameRate: 30,
+		},
+		audio: {
+			sampleSize: 16,
+			channelCount: 2,
+			echoCancellation: true
+		}
 	})
 	.then(stream => {
 		document.getElementById('localVideo').srcObject = stream
