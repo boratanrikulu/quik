@@ -39,6 +39,14 @@ footer .content {
   padding-right: 5px;
 }
 
+.mirror {
+  -o-transform: scaleX(-1);
+  -moz-transform: scaleX(-1);
+  -webkit-transform: scaleX(-1);
+  -ms-transform: scaleX(-1);
+  transform: scaleX(-1);
+}
+
 video {
   border-radius: 1%;
   max-height: 50vh;
@@ -203,6 +211,7 @@ video {
   .container {
     width: 70%;
   }
+
   .chat {
     width: 23%;
   }
