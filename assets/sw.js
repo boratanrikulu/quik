@@ -1,7 +1,6 @@
 self.addEventListener('install', e => {
   e.waitUntil(caches.open('static').then(cache => {
     return cache.addAll([
-      '/',
       '/favicon.ico',
       '/icon.png',
       '/javascript/chat.js',
