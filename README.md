@@ -3,25 +3,15 @@
 <div align="center">
 	<img height="300px" src="doc/quik.do.png">
 	<p>
-		<strong><code>v0.1.0</code></strong> <br>
-		talk, easily. <br>
+		talk, easily.
 	</p>
 </div>
 
-<hr>
-
-**Note:**  
-This project is heavily under development.  
-IT IS NOT PRODUCTION READY YET.  
-DO NOT USE IT.
-
 ## What
 
-Quik.do is a video conferencing tool.
+Quik.do is a video conferencing tool. We want to be able to talk in the simplest way. That's why we created **Quik.do**.
 
-## Why
-
-We want to be able to talk in the simplest way. That's why we created **Quik.do**.
+## Features
 
 **Accountless**  
 You don't need to create any account to use Quik.do, Just use it!
@@ -50,17 +40,6 @@ Quik.do works on Pion ecosystem. Used technologies are below;
 - Pion/Turn
 - Fiber
 - FastHTTP Websocket
-
-## TODOs
-
-- [ ] Automatically changing bitrate according to user's internet speed.  
-- [ ] Screen sharing.  
-- [ ] UI improvements.  
-- [ ] Calendar option for scheduled meetings.  
-- [ ] Admin area for self-hosted managements.  
-- [ ] Structure for scalability.  
-- [ ] GCP and Heroku installation buttons.  
-- [ ] Well written readme for installation stages.  
 
 ## Development
 
