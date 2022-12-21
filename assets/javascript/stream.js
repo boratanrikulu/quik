@@ -3,14 +3,14 @@ function connectStream() {
 	document.getElementById('chat').style.display = 'flex'
 	let pc = new RTCPeerConnection({
 		iceServers: [{
-				'urls': 'stun:turn.quik.do:3478',
+				urls: "stun:relay.metered.ca:80",
 			},
 			{
-				'urls': 'turn:turn.quik.do:3478',
-				'username': 'quik',
-				'credential': 'quikdo',
-			}
-		]
+				urls: "turn:relay.metered.ca:80",
+				username: "f656bb327ada11408d2cd592",
+				credential: "D5FTwyiln3XE0vFq",
+			},
+		],
 	})
 
 	pc.ontrack = function (event) {
