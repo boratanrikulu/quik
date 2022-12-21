@@ -9,7 +9,8 @@
 
 ## What
 
-Quik.do is a video conferencing tool. We want to be able to talk in the simplest way. That's why we created **Quik.do**.
+Quik.do is a video conferencing tool.  
+We want to be able to talk in the simplest way. That's why we created **Quik.do**.
 
 ## Features
 
